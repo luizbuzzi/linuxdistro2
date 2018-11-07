@@ -1,4 +1,5 @@
 #!/bin/sh
 
-python /opt/mon-server/server.py&
-
+cd /opt/embarcados
+mount -t tmpfs -o size=22m tmpfs ./static/images
+python web.py&

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1> App para captura de imagens</h1>
+ 
+<form action="/app" method="POST">
+    Tempo de espera entre capturas:
+    <br>
+    <input type="text" value="" placeholder="1" name="delay">
+    <br><br>
+    Numero de capturas:
+    <br>
+    <input type="text" value="" placeholder="1" name="shots">
+    <br><br>
+    Local a ser salvo:
+    <br>
+    <input type="text" value="" placeholder="images/" name="local">
+    <br><br><br>
+    <input type="submit" value="Iniciar">
+</form>
+<form method="get" action="/logout">
+    <button type="submit">Logout</button>
+</form>
+{% endblock %}

@@ -6,4 +6,6 @@
   cp $BASE_DIR/../custom-scripts/S87server-init $BASE_DIR/target/etc/init.d
   chmod +x $BASE_DIR/target/etc/init.d/S87server-init
 
-  cp -r $BASE_DIR/../custom-scripts/mon-server $BASE_DIR/target/opt/
+  cp -r $BASE_DIR/../custom-scripts/embarcados $BASE_DIR/target/opt
+
+
